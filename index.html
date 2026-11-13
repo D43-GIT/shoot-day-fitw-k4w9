@@ -160,8 +160,8 @@ label{font-size:17px;color:var(--muted);display:block;margin-bottom:4px}
     <div class="h2">👉 Do this now</div>
     <section class="now">
       <div class="glass pad"><p>🎒 Pack the car<small>Tick it off as it goes in.</small></p><button class="btn big" data-open="pack">Open the packing list</button></div>
-      <div class="glass pad"><p>🌧 Rain is likely<small>Covers, towels and a jacket are on the list.</small></p><button class="btn big" data-open="pack" data-focus="p23">Show the rain gear</button></div>
-      <div class="glass pad"><p>🗺 Drive to Wulkuraka<small>Leave 3:45. About 1 hour 30.</small></p><a class="btn big" id="maps" target="_blank" rel="noopener">Open Maps</a></div>
+      <div class="glass pad"><p>⚠️ Do not wipe Jürgen's cards<small>His shoot may still be on the cards in the cameras. Clips on a card = do not format it.</small></p><button class="btn big" data-open="pack" data-focus="p6">Show me</button></div>
+      <div class="glass pad"><p>🗺 Drive to Wulkuraka<small>Leave 3:45. About 1 hour 30. Rain likely, so pack the covers.</small></p><a class="btn big" id="maps" target="_blank" rel="noopener">Open Maps</a></div>
     </section>
 
     <div class="h2">🧭 The lists</div>
@@ -274,12 +274,12 @@ const CAMERA = {
 };
 const SECTIONS = [
   { id: "pack", e: "🎒", t: "Pack the car", items: [
+    ["p6", "⚠️", "Card has clips on it? Do not format it", "Jürgen said Friday his cards are still in the cameras, not copied yet. Press play on each camera first. Clips there = that card goes in the safe pocket, use a blank one."],
     ["p1", "📷", "Sony camera 1 (main)"],
     ["p2", "📷", "Sony camera 2 (spare)"],
     ["p3", "🔭", "24-105 lens (does most things)"],
     ["p4", "🔭", "14-24 lens (wide)"],
     ["p5", "💾", "All 6 memory cards in the case"],
-    ["p6", "⚠️", "Check each card is empty before you format", "Some may still have Jürgen's work on them."],
     ["p7", "🔋", "Every camera battery, charged"],
     ["p8", "🔌", "Battery chargers and their cables"],
     ["p9", "🕶", "ND filters (bright sun outside)"],
